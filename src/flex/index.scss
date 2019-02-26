@@ -1,0 +1,57 @@
+@import "./minix.scss";
+
+// flex
+.sona-flex {
+  @include flexbox;
+}
+
+// inline-flex
+.sona-inline-flex {
+  @include inline-flex;
+}
+
+//设置主轴方向
+.sona-flex-row {
+  @include flex-direction(row);
+  @extend .sona-flex;
+}
+.song-flex-row-reverse {
+  @include flex-direction(row-reverse);
+  @extend .sona-flex;
+}
+.sona-flex-column {
+  @include flex-direction(column);
+  @extend .sona-flex;
+}
+.sona-flex-column-reverse {
+  @include flex-direction(column-reverse);
+  @extend .sona-flex;
+}
+
+// 是否换行
+.sona-flex-nowrap {
+  @extend .sona-flex;
+  @include flex-wrap(nowrap);
+}
+.sona-flex-wrap {
+  @extend .sona-flex;
+  @include flex-wrap(wrap);
+}
+
+// flex-flow
+.sona-flex-flow-RN {
+  @extend .sona-flex;
+  @include flex-flow();
+}
+.sona-flex-flow-RCN {
+  @extend .sona-flex;
+  @include flex-flow(row-reverse nowrap);
+}
+.sona-flex-flow-CN {
+  @extend .sona-flex;
+  @include flex-flow(column nowrap);
+}
+.sona-flex-flow-CCN {
+  @extend .sona-flex;
+  @include flex-flow(column-reverse nowrap);
+}

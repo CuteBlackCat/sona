@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "sass ",
   "main": "index.js",
+  "sass": "index.scss",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CuteBlackCat/sona/issues"
   },
-  "homepage": "https://github.com/CuteBlackCat/sona#readme"
+  "homepage": "https://github.com/CuteBlackCat/sona#readme",
+  "dependencies": {
+    "scsslint": "0.0.3"
+  }
 }
