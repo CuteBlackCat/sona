@@ -37,11 +37,32 @@
   @extend .sona-flex;
   @include flex-wrap(wrap);
 }
+.sona-flex-wrap-reverse {
+  @extend .sona-flex;
+  @include flex-wrap(wrap-reverse);
+}
 
 // flex-flow
+.sona-flex-flow-RW {
+  @extend .sona-flex;
+  @include flex-flow(row wrap);
+}
+.sona-flex-flow-RCW {
+  @extend .sona-flex;
+  @include flex-flow(row-reverse wrap);
+}
+.sona-flex-flow-CW {
+  @extend .sona-flex;
+  @include flex-flow(column wrap);
+}
+.sona-flex-flow-CCW {
+  @extend .sona-flex;
+  @include flex-flow(column-reverse wrap);
+}
+
 .sona-flex-flow-RN {
   @extend .sona-flex;
-  @include flex-flow();
+  @include flex-flow(row nowrap);
 }
 .sona-flex-flow-RCN {
   @extend .sona-flex;
@@ -54,4 +75,69 @@
 .sona-flex-flow-CCN {
   @extend .sona-flex;
   @include flex-flow(column-reverse nowrap);
+}
+
+.sona-flex-flow-RWR {
+  @extend .sona-flex;
+  @include flex-flow(row wrap-reverse);
+}
+.sona-flex-flow-RWR {
+  @extend .sona-flex;
+  @include flex-flow(row-reverse wrap-reverse);
+}
+.sona-flex-flow-CWR {
+  @extend .sona-flex;
+  @include flex-flow(column wrap-reverse);
+}
+.sona-flex-flow-CRWR {
+  @extend .sona-flex;
+  @include flex-flow(column-reverse wrap-reverse);
+}
+
+// 主轴对齐方式
+.sona-flex-justify-FS {
+  @extend .sona-flex;
+  @include justify-content();
+}
+.sona-flex-justify-FE {
+  @extend .sona-flex;
+  @include justify-content(flex-end);
+}
+.sona-flex-justify-SB {
+  @extend .sona-flex;
+  @include justify-content(space-between);
+}
+.sona-flex-justify-SA {
+  @extend .sona-flex;
+  @include justify-content(space-around);
+}
+.sona-flex-justify-SE {
+  @extend .sona-flex;
+  @include justify-content(space-evenly);
+}
+.sona-flex-justify-C {
+  @extend .sona-flex;
+  @include justify-content(center);
+}
+
+// 纵轴对齐方式
+.sona-flex-align-S {
+  @extend .sona-flex;
+  @include align-item(stretch);
+}
+.sona-flex-align-FS {
+  @extend .sona-flex;
+  @include align-item(flex-start);
+}
+.sona-flex-align-FE {
+  @extend .sona-flex;
+  @include align-item(flex-end);
+}
+.sona-flex-align-C {
+  @extend .sona-flex;
+  @include align-item(center);
+}
+.sona-flex-align-B {
+  @extend .sona-flex;
+  @include align-item(baseline);
 }
