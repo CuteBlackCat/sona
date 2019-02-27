@@ -1,60 +1,73 @@
 // font
 @each $size in 12, 14, 16, 18, 20, 24, 28, 34 {
   .sona-font-#{$size} {
-    font-size: $size;
+    font-size: #{$size}px;
   }
 }
 
 //border-radius
 @each $radius in 3, 4, 5, 8 {
   .sona-br-#{$radius} {
-    border-radius: $radius;
+    border-radius: #{$radius}px;
   }
 }
 
 // margin padding
 @each $len in 5, 10, 20, 30, 60 {
   .sona-mr-#{$len} {
-    margin-right: $len;
+    margin-right: #{$len}px;
   }
   .sona-ml-#{$len} {
-    margin-left: $len;
+    margin-left: #{$len}px;
   }
   .sona-mt-#{$len} {
-    margin-top: $len;
+    margin-top: #{$len}px;
   }
   .sona-mb-#{$len} {
-    margin-bottom: $len;
+    margin-bottom: #{$len}px;
   }
   .sona-margin-#{$len} {
-    margin: $len;
+    margin: #{$len}px;
   }
   .sona-mh-#{$len} {
-    margin: 0 $len;
+    margin: 0 #{$len}px;
   }
   .sona-mv-#{$len} {
     margin: $len 0;
   }
 
   .sona-pr-#{$len} {
-    padding-right: $len;
+    padding-right: #{$len}px;
   }
   .sona-pl-#{$len} {
-    padding-left: $len;
+    padding-left: #{$len}px;
   }
   .sona-pt-#{$len} {
-    padding-top: $len;
+    padding-top: #{$len}px;
   }
   .sona-pb-#{$len} {
-    padding-bottom: $len;
+    padding-bottom: #{$len}px;
   }
   .sona-padding-#{$len} {
-    padding: $len;
+    padding: #{$len}px;
   }
   .sona-ph-#{$len} {
-    padding: 0 $len;
+    padding: 0 #{$len}px;
   }
   .sona-pv-#{$len} {
     padding: $len 0;
+  }
+}
+
+@mixin sona-border-mixin($value, $short, $px: 1) {
+  @if $value == null {
+    .sona-border {
+      border: $px solid rgba(0, 0, 0, 0.42);
+    }
+  } @else {
+    .sona-border-#{$short,
+    $px} {
+      border-#{$value}: $px solid rgba(0, 0, 0, 0.42);
+    }
   }
 }
