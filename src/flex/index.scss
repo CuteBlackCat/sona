@@ -141,3 +141,9 @@
   @extend .sona-flex;
   @include align-item(baseline);
 }
+
+.sona-flex-center {
+  @extend .sona-flex;
+  @include justify-content(center);
+  @include align-item(center);
+}

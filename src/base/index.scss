@@ -1,0 +1,60 @@
+// font
+@each $size in 12, 14, 16, 18, 20, 24, 28, 34 {
+  .sona-font-#{$size} {
+    font-size: $size;
+  }
+}
+
+//border-radius
+@each $radius in 3, 4, 5, 8 {
+  .sona-br-#{$radius} {
+    border-radius: $radius;
+  }
+}
+
+// margin padding
+@each $len in 5, 10, 20, 30, 60 {
+  .sona-mr-#{$len} {
+    margin-right: $len;
+  }
+  .sona-ml-#{$len} {
+    margin-left: $len;
+  }
+  .sona-mt-#{$len} {
+    margin-top: $len;
+  }
+  .sona-mb-#{$len} {
+    margin-bottom: $len;
+  }
+  .sona-margin-#{$len} {
+    margin: $len;
+  }
+  .sona-mh-#{$len} {
+    margin: 0 $len;
+  }
+  .sona-mv-#{$len} {
+    margin: $len 0;
+  }
+
+  .sona-pr-#{$len} {
+    padding-right: $len;
+  }
+  .sona-pl-#{$len} {
+    padding-left: $len;
+  }
+  .sona-pt-#{$len} {
+    padding-top: $len;
+  }
+  .sona-pb-#{$len} {
+    padding-bottom: $len;
+  }
+  .sona-padding-#{$len} {
+    padding: $len;
+  }
+  .sona-ph-#{$len} {
+    padding: 0 $len;
+  }
+  .sona-pv-#{$len} {
+    padding: $len 0;
+  }
+}
