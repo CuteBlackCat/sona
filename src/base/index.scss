@@ -12,6 +12,35 @@
   }
 }
 
+// @mixin sona-mp-mixin($attr: null, $short: null) {
+//   @each $len in 5, 10, 20, 30, 60 {
+//     @if $attr == null && $short == h {
+//       .sona-m#{$short}-#{$len} {
+//         margin: #{$len}px 0;
+//       }
+
+//       .sona-p#{$short}-#{$len} {
+//         padding-#{$arrt}: #{$len}px;
+//       }
+//     } @else if $attr == null && $short == null {
+//       .sona-margin-#{$len} {
+//         margin: #{$len}px;
+//       }
+//       .sona-padding-#{$len} {
+//         padding: #{$len}px;
+//       }
+//     } @else {
+//       .sona-m#{$short}-#{$len} {
+//         margin-#{$arrt}: #{$len}px;
+//       }
+
+//       .sona-p#{$short}-#{$len} {
+//         padding-#{$arrt}: #{$len}px;
+//       }
+//     }
+//   }
+// }
+
 // margin padding
 @each $len in 5, 10, 20, 30, 60 {
   .sona-mr-#{$len} {
@@ -30,10 +59,10 @@
     margin: #{$len}px;
   }
   .sona-mh-#{$len} {
-    margin: 0 #{$len}px;
+    margin: #{$len}px 0;
   }
   .sona-mv-#{$len} {
-    margin: $len 0;
+    margin: 0 #{$len}px;
   }
 
   .sona-pr-#{$len} {
@@ -52,10 +81,10 @@
     padding: #{$len}px;
   }
   .sona-ph-#{$len} {
-    padding: 0 #{$len}px;
+    padding: #{$len}px 0;
   }
   .sona-pv-#{$len} {
-    padding: $len 0;
+    padding: 0 #{$len}px;
   }
 }
 
