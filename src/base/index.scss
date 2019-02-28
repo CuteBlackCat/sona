@@ -59,15 +59,21 @@
   }
 }
 
-@mixin sona-border-mixin($value, $short, $px: 1) {
+// border
+@mixin sona-border-mixin($value: null, $short: null, $px: 1) {
   @if $value == null {
     .sona-border {
       border: $px solid rgba(0, 0, 0, 0.42);
     }
   } @else {
-    .sona-border-#{$short,
-    $px} {
-      border-#{$value}: $px solid rgba(0, 0, 0, 0.42);
+    .sona-border-#{$short}#{$px} {
+      border-#{$value}: #{$px}px solid rgba(0, 0, 0, 0.42);
     }
   }
 }
+
+@include sona-border-mixin();
+@include sona-border-mixin(right, R);
+@include sona-border-mixin(left, L);
+@include sona-border-mixin(top, T);
+@include sona-border-mixin(bottom, B);
