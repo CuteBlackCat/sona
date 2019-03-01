@@ -1,5 +1,5 @@
 // font
-@each $size in 12, 14, 16, 18, 20, 24, 28, 34 {
+@each $size in 12, 14, 16, 18, 20, 22, 24, 28, 32, 34 {
   .sona-font-#{$size} {
     font-size: #{$size}px;
   }
@@ -42,7 +42,7 @@
 // }
 
 // margin padding
-@each $len in 5, 10, 20, 30, 60 {
+@each $len in 5, 10, 15, 20, 25, 30, 60 {
   .sona-mr-#{$len} {
     margin-right: #{$len}px;
   }

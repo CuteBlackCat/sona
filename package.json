@@ -1,6 +1,6 @@
 {
   "name": "league_sona",
-  "version": "1.0.5",
+  "version": "1.0.7",
   "description": "sass ",
   "main": "index.js",
   "style": "src/index.scss",
